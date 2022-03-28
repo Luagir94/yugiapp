@@ -1,0 +1,148 @@
+.myDeck{
+    width: 100%;
+    height: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    padding: 1rem;
+    &__DisplayDeck{
+
+        width: 75%;
+        background: #011526;
+        display: flex;
+        align-items: center;
+        height: 80%;
+        justify-content: center;
+        flex-direction: column;
+
+        &-deck{
+            width: 90%;
+            height: 80%;
+            display: flex;
+            background: #011526;
+            
+            padding: 1rem;
+            gap: 1rem;
+
+            &-conteiner{
+                width: 90%;
+                height: 100%;
+                background: #02735E;
+                display: flex;
+                padding: 1rem;
+                flex-wrap: wrap;
+                gap: .5rem;
+                &-data{
+                    font-weight: 600;
+                    color:#038C65;
+                    width: 20%;
+                    text-align: left;
+                }
+                &-card{
+                    height: fit-content;
+                    position: relative;
+
+                    &-badge{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: red;
+                        color: yellow;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: solid 1px yellow;
+                    }
+                    &-img{
+                        height: 5.8rem;
+                    }
+                }
+            }
+     
+        }
+        &-extra{
+            width: 90%;
+            height: 20%;
+            display: flex;
+            background: #011526;
+            padding: 1rem;
+            gap: 1rem;
+            &-conteiner{
+                width: 90%;
+                height: 100%;
+                background: #02735E;
+                display: flex;
+                align-items: center;
+                padding: 1rem;
+                justify-content: flex-start;
+                gap: .5rem;
+                &-card{
+                    height: fit-content;
+                    position: relative;
+                    &-img{
+                        height: 5.8rem;
+                    }
+                }
+            }
+           
+        }
+    }
+    &__DisplaySelection{
+        background-color: #012E40;
+        width: 20%;
+        height: 80%;
+        &-conteiner{
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: .5rem;
+            padding: 10px;
+            img{
+                height: 12rem;
+            }
+            &-dato{
+                height:3rem;
+                color: white;
+                text-align: left;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                border: #038C65 solid 1px;
+                border-radius: 5px;
+                width: 40%;
+                padding: 10px;
+                background-color: transparent;
+                font-size: .8rem;
+                
+                &-desc{     
+                    height:auto;
+                    overflow-y: scroll;
+                    color: white;
+                    text-align: left;
+                    border: #038C65 solid 1px;
+                    background-color: transparent;
+                    border-radius: 5px;
+                    padding: 10px;
+                    height: 6rem;
+                    font-size: .8rem;
+                    
+                }
+          
+
+        }
+        &-button{
+            width: 120px;
+            height: 40px;
+            border-radius: 1rem;
+            background: #011526 ;
+            cursor: pointer;
+            color: white;
+            &:hover{
+                background: #039145;
+            }
+        }
+    }}}

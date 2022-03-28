@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import React,{useContext} from 'react';
 import './App.css';
+import { DeckProvider } from './Context/DeckContext';
+import { NotificationsProvider } from '@mantine/notifications';
+
+
+import Routing from './Routing';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NotificationsProvider>
+      <DeckProvider>
+        <Routing/>
+      </DeckProvider>
+      </NotificationsProvider>
     </div>
   );
 }

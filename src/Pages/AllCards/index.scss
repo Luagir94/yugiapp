@@ -1,0 +1,170 @@
+.cardPicker{
+    height: 92%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &__list{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &-content{
+            width: 90%;
+            height: 80%;
+            background: #011526;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            &-filters{
+                width: 100%;
+                height: 10%;
+                display: flex;
+                gap: 1rem;
+                justify-content: center;
+                align-items: center;
+                input, select, button{
+                    width:100px;
+                    height: 2rem;
+                    border:#038C65 solid 1px;
+                    background: transparent;
+                    color:white;
+                    border-radius: 5px;
+                    &::placeholder{
+                        color:white;
+                    }
+                    option{
+                        background-color: #038C65;
+                        border: #038C65 solid 1px;
+                        height: 2rem;
+                        font-size: 1rem;
+                        &:hover{
+                            background: red;
+                        }
+                    }
+                }
+            }
+            &-cards{
+                width: 100%;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+                justify-content: space-between;
+                color: white;
+                gap: 3rem;
+                &-cards{
+                    width: 90%;
+                    height: 100%;
+                    ul{
+                        height: 100%;
+                        width: 100%;
+                        background-color: transparent;
+                        li{
+                            text-align: left;
+                            height:2.5rem;
+                            width: 100%;
+                            background: #038C65;
+                            border: 1px solid #02843E;
+            
+                        }
+                        .active{
+                            background-color: #012E40 ;
+                        }
+                    }
+                }
+                .mantine-Group-root{
+                    height: 10rem;
+                    margin-bottom: 1rem;
+                   
+                }
+            }
+        }
+
+    }
+    &__display{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &-content{
+            width: 90%;
+            height: 80%;
+            background: #011526;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+            justify-content: center;
+            &-img{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                align-items: center;
+                justify-content: center;
+                &-img{
+                    height: 30rem;
+                }
+            }
+            &-data{
+                width: 50%;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                &-add{
+                    width: 120px;
+                    height: 40px;
+                    border-radius: 1rem;
+                    background: #012E40 ;
+                    cursor: pointer;
+                    color: white;
+                    &:hover{
+                        background: #039145;
+                    }
+                }
+                &-img{
+                    height: 50%;
+           
+                }
+                &-dato{
+                    height:auto;
+                    color: white;
+                    text-align: left;
+                    border: #038C65 solid 1px;
+                    border-radius: 5px;
+                    width: 100%;
+                    padding: 10px;
+                    background-color: #038C65;
+                    &-desc{     
+                        height:auto;
+                        overflow-y: scroll;
+                        color: white;
+                        text-align: left;
+                        border: #038C65 solid 1px;
+                        background-color: #038C65;
+                        border-radius: 5px;
+                        padding: 10px;
+                        height: 8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mantine-Badge-leftSection{
+    background-color: red;
+    width: 2rem;
+}
