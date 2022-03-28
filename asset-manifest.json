@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/yugiapp/static/css/main.0e923715.css",
+    "main.js": "/yugiapp/static/js/main.5904eda8.js",
+    "static/js/787.fc1a71a1.chunk.js": "/yugiapp/static/js/787.fc1a71a1.chunk.js",
+    "static/media/ygoLogo.png": "/yugiapp/static/media/ygoLogo.58ce0f55903f8256da70.png",
+    "index.html": "/yugiapp/index.html",
+    "main.0e923715.css.map": "/yugiapp/static/css/main.0e923715.css.map",
+    "main.5904eda8.js.map": "/yugiapp/static/js/main.5904eda8.js.map",
+    "787.fc1a71a1.chunk.js.map": "/yugiapp/static/js/787.fc1a71a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e923715.css",
+    "static/js/main.5904eda8.js"
+  ]
+}
